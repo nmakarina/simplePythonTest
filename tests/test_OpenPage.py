@@ -18,8 +18,7 @@ class TestOpenPageClass:
 
         """
         range2 = '0'
-        with allure.step("Создание нового бланка"):
-            # переход на страницу логина
+        with allure.step("переход на страницу логина"):
             LoginHelper.OpenURL(URL)
 
             result = LoginHelper.LoginPageIsOpen()
