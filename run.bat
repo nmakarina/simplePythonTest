@@ -7,8 +7,8 @@ md reports_junit
 
 set PYTHONPATH=%CD%
 
-%CD%\..\test-env\Scripts\py.test --junitxml=reports_junit/test_OpenPage.xml --alluredir=reports/ tests/test_OpenPage.py
+%CD%\venv\Scripts\py.test --junitxml=reports_junit/test_OpenPage.xml --alluredir=reports/ tests/test_OpenPage.py
 
-libs\allure-2.3.4\bin\allure.bat generate -o reports_allure/ -- reports/
+::libs\allure-2.3.4\bin\allure.bat generate -o reports_allure/ -- reports/
 pause
 

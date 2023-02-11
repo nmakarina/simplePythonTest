@@ -1,7 +1,7 @@
 from core import AttachHelper
 from helpers import LoginHelper
-import pytest
 import allure
+from allure import severity, severity_level
 
 URL = "http://yourURL.com"
 
@@ -10,7 +10,7 @@ class TestOpenPageClass:
 
 
     @allure.feature('Открытие страницы логина')
-    @pytest.allure.severity(pytest.allure.severity_level.NORMAL)
+    @severity(severity_level.NORMAL)
     def test_1(self):
         """
         step 1:
